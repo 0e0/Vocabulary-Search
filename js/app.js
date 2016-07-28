@@ -1,4 +1,8 @@
-//PLAN of steps to do 
+//PLAN of steps to do Key:
+67a68a6fb97d68d77bfd6c8ff27b2135
+
+Secret:
+c505816071a9ba79
 $(function() {
 
     //STEP 1 : get the data from API youtube 
