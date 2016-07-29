@@ -1,16 +1,3 @@
-// function forvoData(json) {
-//     console.log(json)
-//     var myData = json.items[0];
-//     console.log(myData);
-//     // var html = '';
-    // $("#forvo-results-container").empty();
-    // $.each(json.items, function(index, value) {
-    //     html += '<img src="' + value.media.m 
-    //     + '"class="col-xs-12 col-md-4 img-responsive">';
-    // });
-    // $("#forvo-results-container").append(html);
-// };
-
 
 function getData(searchTerm) {
 
@@ -18,11 +5,35 @@ $.getJSON('http://apifree.forvo.com/action/word-pronunciations/format/json/word/
 
   var myData = data.items[0].pathmp3;
   console.log(myData);
+  $('.forvo-link').text("Download "+searchTerm).attr('href', myData);
 });
 
 }
 
-getData(hund);
+getData('hund');
+
+
+
+
+
+
+
+
+
+
+// function forvoData(json) {
+//     console.log(json)
+//     var myData = json.items[0];
+//     console.log(myData);
+//     // var html = '';
+    // $("#forvo-results-container").empty();
+    // $.each(json.items, function(index, value) {
+     //    html += '<img src="' + value.media.m 
+    //     + '"class="col-xs-12 col-md-4 img-responsive">';
+    // });
+    // $("#forvo-results-container").append(html);
+// };
+
 
 
 
