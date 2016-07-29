@@ -25,7 +25,13 @@ function getData(searchTerm) {
                     console.log(data);
         var myData = data.items[0].pathmp3;
         console.log(myData);
+        var forvoControls = $('.forvo-audio-controls');
+        // forvoControls.empty();
         $('.forvo-link').text("Download " + searchTerm).attr('href', myData);
+        $('.forvo-audio').attr('src', myData);
+        forvoControls[0].pause();
+        forvoControls[0].load();
+        forvoControls[0].oncanplaythrough = forvoControls[0].play();
     });
 
 }
