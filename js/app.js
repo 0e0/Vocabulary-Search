@@ -19,6 +19,9 @@ function getData(searchTerm) {
             data: {
                 tags: searchTerm,
                 format: 'json'
+
+
+
             }
         });
 
