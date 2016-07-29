@@ -19,9 +19,6 @@ function getData(searchTerm) {
             data: {
                 tags: searchTerm,
                 format: 'json'
-
-
-
             }
         });
 
@@ -35,7 +32,6 @@ $('form').submit(function(e){
     console.log(searchTerm);
     getData(searchTerm);
     $('#search-term').val('');
-
 });
 
 
