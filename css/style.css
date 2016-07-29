@@ -1,8 +1,13 @@
-#searchTerm {
-	margin-top: 20em;
+#search-term {
+	margin-top: 2em;
 	padding-top: 10px;
 }
 
 .results-section {
 	margin-top: 3em;
+}
+
+.forvo-results-section {
+	margin-top: 3em;
+	text-align: center;
 }
